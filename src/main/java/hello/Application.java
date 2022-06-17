@@ -67,10 +67,33 @@ public class Application {
   
     loc = (x,y);
     Areana.Map<self.href,PlayerState>
-    if(PlayerState.wasHit = "True"){
-    String[] commands = new String[]{"T"};
-    int t = new Random().nextInt(3);
-    return commands[t];
+    if(PlayerState.wasHit = "True")
+    {
+      switch(PlayerState.direction) {
+        case ("N" && t <= 3) :
+          String[] commands = new String[]{"F", "L", "T"};
+          break;
+          
+        case ("W" && t <= 3):
+         String[] commands = new String[]{"F", "L", "T"};
+          break;
+          
+        case ("E" && t <= 3):
+          String[] commands = new String[]{"F", "L", "T"};
+          break;
+         
+        case ("S" && t <= 3):
+          String[] commands = new String[]{"F", "L", "T"};
+          break;
+          
+        default:
+          String[] commands = new String[]{"T"};
+    }
+      
+      String[] commands = new String[]{"T"};
+      int t = new Random().nextInt(3);
+      return commands[t];
+      
     }
 
   }
