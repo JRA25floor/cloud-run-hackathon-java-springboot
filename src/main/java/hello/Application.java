@@ -58,8 +58,22 @@ public class Application {
     System.out.println(arenaUpdate);
     String[] commands = new String[]{"F", "R", "L", "T"};
     int i = new Random().nextInt(4);
+    
     return commands[i];
   }
 
+  @checkAttack
+  public String checkAttack(){
+  
+    loc = (x,y);
+    Areana.Map<self.href,PlayerState>
+    if(PlayerState.wasHit = "True"){
+    String[] commands = new String[]{"T"};
+    int t = new Random().nextInt(3);
+    return commands[t];
+    }
+
+  }
+  
 }
 
